@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./error/css/login.css">
+</head>
+<body>
+    <div class="center">
+        <img src="./error/img/Vector.svg" alt="">
+        <h1>Welcome</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label for="">Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label for="">Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+           <div class="btns-update">
+            <a href="#" class="btns"><span>Login</span></a>
+           </div>
+            <div class="signup_link"> 
+                Not a member? <a href="#">Signup</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        const btn = document.querySelector('.btns');
+        btn.onmousemove = function(e) {
+            const x = e.pageX - btn.offsetLeft;
+            const y = e.pageY - btn.offsetTop;
+
+            btn.style.setProperty('--x', x + 'px');
+            btn.style.setProperty('--y', y + 'px')
+        }
+    </script>
+</body>
+</html>

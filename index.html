@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./error/img/Vector.svg" type="image/x-icon">
+    <title>TURTLES</title>
+    <link href="https://pagecdn.io/lib/normalize/8.0.1/normalize.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./error/css/base.css">
+    <link rel="stylesheet" href="./error/css/main.css">
+    <link rel="stylesheet" href="./error/css/grid.css">
+    <link rel="stylesheet" href="./error/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./error/css/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+        <!-- <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake"style="font-size: 27px;">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake "style="font-size: 27px;">
+            ❄
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake "style="font-size: 27px;">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❄
+            </div>
+            <div class="snowflake "style="font-size: 27px;">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake "style="font-size: 27px;">
+            ❄
+            </div> 
+        </div> -->
+
+        <header class="header">
+            <div class="grid wide">
+                <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <img src="./error/img/Group 1.svg" alt="">
+                        </a>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+                    <div class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Bạn muốn tìm gì">
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong Shop</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong Shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài Shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <!--Phần Giỏ Hàng -->
+
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <img src="./error/img/img-empty.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Hiện chưa có sản phẩm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Hết Giỏ Hàng  -->
+                <!-- Thanh người dùng -->
+                <div class="nav-user hide-on-mobile-tablet">
+                    <div class="navigation">
+                        <ul class="user-list">
+                            <li class="list active">
+                                <a href="#">
+                                    <span class="icon">
+                                        <label for="pc-user-checkbox" class="header__pc-user">
+                                            <i class="far fa-user"></i>
+                                        </label>
+
+                                    </span>
+                                    <span class="text">Profile</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <i class="far fa-bell"></i>
+                                    </span>
+                                    <span class="text">Notify</span>
+                                </a>
+                            </li>
+
+                            <div class="indicator"></div>
+                        </ul>
+                        <!-- <input type="checkbox" hidden id="pc-user-checkbox" class="header__user-checkbox"> -->
+                    </div>
+                    <div class="profile">
+                        <ul class="profile-list">
+                            <li>
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Địa chỉ của tôi</a>
+                            </li>
+                            <li>
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="toggle"></div>
+                </div>
+            </div>
+
+        </header>
+        <!-- Phần Sản Phẩm Trưng Bày vv... -->
+        <div class="app__container night ">
+            <div class="grid wide">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-o c-0">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list-ul"></i>
+                                Danh Mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Điện Thoại Iphone 13</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Điện Thoại Iphone 12</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Điện Thoại Iphone 11</a>
+                                </li>
+                            </ul>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Điện Thoại Sam Sung</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Điện thoại Oppo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Điện thoại ViVo</a>
+                                </li>
+                            </ul>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Điện thoại Realme</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Điện thoại Xiaomi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Điện thoại Huawei</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="box__support">
+                            <h2>Need Help ?</h2>
+                            <img src="./error/img/Group.svg" alt="">
+                            <br>
+                            <span>Call: 0477 264 928</span>
+                            <p>Bạn chưa có tài khoản ?
+                                <a class="login-button" href="login.html">Đăng Ký Ngay</a>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col l-10 c-12 m-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn active" data-title="#popular">Phổ Biến</button>
+                            <button class="home-filter__btn btn" data-title="#newest">Mới Nhất</button>
+                            <button class="home-filter__btn btn" data-title="#runout">Bán Chạy</button>
+                            <div class="select-input">
+                                <span class=" select-input__label">Giá</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến Cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến Thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile  -->
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- End  Mobile  -->
+                        <div class="home-product active" id="popular">
+                            <div class="row sm-gutter">
+                                <!-- Product item -->
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/iPhone-13-Pro.jpg);">
+                                        </div>
+                                        <h4 href="buyproduct.html" class="home-product-item__name">[Mã ELAP1TR giảm 5% đơn 3TR] Apple iPhone 13
+                                            Pro Max Chính hãng VN/A</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">44.950.000</span>
+                                            <span class="home-product-item__price-current">38.450.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like  ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/iphone\ 13\ pro2.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Apple iPhone 13 Pro Max 256GB</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">40.950.000</span>
+                                            <span class="home-product-item__price-current">37.990.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Dizigear</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/iphone12pro-.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại iPhone 12 Pro Max 512GB - Bản
+                                            Quốc Tế Mĩ LL/a - Máy mới Nguyên Seal Full Box - Cam Kết Chính Hãng 100%
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">15.450.000</span>
+                                            <span class="home-product-item__price-current">8.990.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">36 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Sony</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/Iphone-12-promax.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">[Siêu Sale] Điện thoại iPhone 12 Pro max bản
+                                            quốc tế LL/A 128GB - máy mới 100% chưa kích hoạt</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">26.450.000</span>
+                                            <span class="home-product-item__price-current">15.990.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">9 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Tp.HCM</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/sam-sung1.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">[Mã 11ELSALE hoàn 7% xu đơn 300k] Điện Thoại
+                                            Samsung Galaxy Z Fold 3 5G (256GB/512GB) SM-F926B - Hàng Chính Hãng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">38.750.000</span>
+                                            <span class="home-product-item__price-current">35.950.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">24 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Tp.HCM</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/samsung-galaxy-m31.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại Samsung Galaxy M31 - Hàng Chính
+                                            Hãng Mới 100% - Bảo Hành 12 Tháng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">6.950.000</span>
+                                            <span class="home-product-item__price-current">4.999.000
+
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">45 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">s7Shop</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">20%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img//3dea2d8f164ec2002c8ddfa1d230b1ed_tn.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại di động P48 Pro 64GB /128Gbộ nhớ
+                                            lớn, điện thoại chơi game Android 5G hai SIM toàn màn hình hoàn toàn mới
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">2.380.000đ</span>
+                                            <span class="home-product-item__price-current">1.159.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like  ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/iphone-13-promax.jpg);">
+                                        </div>
+                                        <a href="buyproduct.html" class="home-product-item__name">[Mã ELAP1TR giảm 5% đơn 3TR] Apple iPhone 13
+                                            Pro Max Chính hãng VN/A</a>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">44.450.000</span>
+                                            <span class="home-product-item__price-current">30.630.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">84 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Acome</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div> -->
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/oppo-a52.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại OPPO A52 - Hàng Chính Hãng Mới
+                                            100%</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">5.990.000</span>
+                                            <span class="home-product-item__price-current">4.750.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like  ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/vivo-y20s.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại Vivo Y20s (6GB/128GB) màn hình
+                                            6.51" IPS LCD pin 5000 mAh - Chính hãng BH 12 tháng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">4.990.000</span>
+                                            <span class="home-product-item__price-current">4.500.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">53 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">sidotech</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="home-product " id="newest">
+                            <div class="row sm-gutter">
+                                <!-- Product item -->
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/iphone12.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Siêu sale Iphone-12-promax siêu xịn, đẹp đẽ,
+                                            vừa kongf khách hàng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">32.520.000</span>
+                                            <span class="home-product-item__price-current">20.480.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like  ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/realme1.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name"> Điện Thoại Realme 8 5G (8GB/128GB) - Hàng
+                                            Chính Hãng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">7.790.000đ</span>
+                                            <span class="home-product-item__price-current">6.450.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Dizigear</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/realme2.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại Realme C21Y 4GB - Hàng Chính Hãng
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">4.500.000</span>
+                                            <span class="home-product-item__price-current">4.250.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">36 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Sony</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/sam-sung1.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện Thoại Samsung Galaxy M22 (6GB/128GB) -
+                                            Hãng Phân Phối Chính Thức</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">4.850.000</span>
+                                            <span class="home-product-item__price-current">3.990.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">9 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Tp.HCM</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/realme3.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại Rino6 Pro với bộ nhớ lớn 4 + 64G,
+                                            Điện thoại chơi game Android 5G toàn màn hình nguyên bản hoàn toàn mới</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">12.980.000</span>
+                                            <span class="home-product-item__price-current">9.980.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">24 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Tp.HCM</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/sam-sung2.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại Samsung Galaxy A10S Pro giá tốt
+                                            nguyên Zin Bình An mobile</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">12.550.000</span>
+                                            <span class="home-product-item__price-current">10.980.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">45 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">s7Shop</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">20%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/iphone-.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">[Mã ELAP1TR giảm 5% đơn 3TR] Apple iPhone 13
+                                            Pro Max Chính hãng VN/A</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">38.950.000</span>
+                                            <span class="home-product-item__price-current">25.450.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <!-- <span class="home-product-item__brand">hoco</span> -->
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/iPhone-13-Pro-Max1.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">[Mã ELAP1TR giảm 5% đơn 3TR] Apple iPhone 13
+                                            Pro Max Chính hãng VN/A</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">39.480.000</span>
+                                            <span class="home-product-item__price-current">37.450.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">84 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Acome</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(	./error/img/Oppo-RX17.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Siêu phâm Oppo-RX17 cập bến, hàng đảm bảo
+                                            chất lượng, bão hành 12 tháng </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">9.850.000</span>
+                                            <span class="home-product-item__price-current">7.780.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">RX3</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/xiaomi1.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện Thoại xiaomi Redmi 9A chính hãng bảo
+                                            hành 6 tháng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">6.780.999</span>
+                                            <span class="home-product-item__price-current">5.450.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">53 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">sidotech</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-product " id="runout">
+                            <div class="row sm-gutter">
+                                <!-- Product item -->
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(	./error/img/iphone-13-promax.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại Iphone 13 Pro Max 512gb hàng nhập
+                                            nguyên seal, mới 100%, kiểm tra hàng trước khi thanh toán</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">35.780.000</span>
+                                            <span class="home-product-item__price-current">34.980.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like  ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/Iphone-13-3jpg.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại Apple iPhone 13 512GB Chính Hãng
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">34.980.000</span>
+                                            <span class="home-product-item__price-current">32.980.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">11 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Dizigear</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/iPhone-13-Pro-Max1.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">[Mã ELAP1TR giảm 5% đơn 3TR] Apple iPhone 13
+                                            128GB</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">32.450.000</span>
+                                            <span class="home-product-item__price-current">29.990.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">36 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Sony</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/vivo1.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name"> Điện thoại Vivo Y20 (2021) 4GB + 64GB -
+                                            Hàng chính hãng1</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">9.980.000</span>
+                                            <span class="home-product-item__price-current">8.500.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">9 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Tp.HCM</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/vivo2.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">[ Lưu VIVO1Y21 giảm ngay 130K ] Điện thoại
+                                            Vivo Y21 4GB + 64GB - Hàng chính hãng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">7.990.000</span>
+                                            <span class="home-product-item__price-current">6.999.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">24 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Hoco</span>
+                                            <span class="home-product-item__origin-name">Tp.HCM</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/realme2.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện Thoại Realme C11 (4GB/64GB) - Hàng
+                                            Chính Hãng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">9.780.000</span>
+                                            <span class="home-product-item__price-current">8.450.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">45 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">s7Shop</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">20%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/sam-sung2.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại Samsung Galaxy A12 (4GB/128GB) -
+                                            Hàng chính hãng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">7.780.000</span>
+                                            <span class="home-product-item__price-current">6.980.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <!-- <span class="home-product-item__brand">hoco</span> -->
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/realme3.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại Realme C21Y 4GB - Hàng Chính Hãng
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">13.450.000</span>
+                                            <span class="home-product-item__price-current">11.980.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">84 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Acome</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(	./error/img/iphone-13-2.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">[Mã ELAP1TR giảm 5% đơn 3TR] Apple iPhone 13
+                                            Pro Chính hãng VN/A</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">44.780.000</span>
+                                            <span class="home-product-item__price-current">40.980.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">RX3</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(./error/img/Iphone-13-3jpg.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Điện thoại iPhone 13 Pro Max 1TB (hàng nhập
+                                            khẩu ZA)</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">36.980.000</span>
+                                            <span class="home-product-item__price-current">34.780.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked ">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">53 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">sidotech</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+            <div class="grid wide">
+                <div class="row sm-gutter commit below-category">
+                    <div class="col l-3 m-3 c-6">
+                        <div class="commit">
+                            <i class="fas fa-credit-card"></i>
+                            <h3>Cam Kết Chính Hãng</h3>
+                            <span>100% Authentic</span>
+                            <p>Sản phẩm được đưa về từ các nhãn hàng uy tín</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                            <h3>Tư Vấn Khách Hàng</h3>
+                            <span>Hỗ Trợ Tư Vấn 24/24</span>
+                            <p>Gọi ngay</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-3 c-6">
+                        <div class="shipping">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h3>Giao hàng hoả tốc</h3>
+                            <span>Express Delivery</span>
+                            <p>Ship hoả tốc chưa đầy 1h trong nội thành Vinh</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <div class="gift">
+                            <i class="fas fa-gift"></i>
+                            <h3>Chương Trình Khuyến Mãi</h3>
+                            <span>Món Quà Bất Ngờ</span>
+                            <p>Niềm vui nho nhỏ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phần chân trang -->
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">F8-Shop Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tai nghe gaming</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tai nghe thể thao</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tai nghe over ear</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class=" footer-item-icon fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class=" footer-item-icon fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class=" footer-item-icon fab fa-linkedin"></i>
+                                    LinkedIN
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-12">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./error/img/QRcode..png" alt="Download QR" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-apps__link">
+                                    <img src="./error/img/ggplayimg.png" alt="Google Play"
+                                        class="footer__download-apps-img">
+                                </a>
+                                <a href="" class="footer__download-apps__link">
+                                    <img src="./error/img/appstore.png" alt="Appstore"
+                                        class="footer__download-apps-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">@ Copyright and madeby me .. :3 </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="./js/javasript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#toggle').click(function () {
+                $('#toggle').toggleClass('mode')
+                $('body').toggleClass('night')
+                $('.app__container').toggleClass('nights')
+                $('.commit').toggleClass('nights')
+            })
+        })
+      //
+
+
+    </script>
+</body>
+
+</html>
