@@ -1033,7 +1033,7 @@ i.home-product-item__like-icon-fill {
     background-color: #fcde67;
     left: 0px;
     top: 0;
-    transform: translateX(-144%);
+    transform: translateX(calc(-100% - 176px));
     transition: all 0.5s ease;
     border-radius: 10px;
 }
